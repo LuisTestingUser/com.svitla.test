@@ -1,0 +1,21 @@
+# Build artifacts
+build/
+dist/
+
+# IDE-specific files
+.vscode/
+*.suo
+*.user
+*.sln
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# Allure Report and results
+allure-report/
+allure-results/
+
+# Node.js modules
+node_modules/
