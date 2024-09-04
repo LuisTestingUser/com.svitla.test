@@ -11,7 +11,6 @@ import CheckoutCompletePage from '../pageobjects/CheckoutComplete.page.js'
 describe('E2E Test SVITLA', () => {
     it('trying to login with invalid credentials', async () => {
         await LoginPage.open()
-        //await browser.maximizeWindow();
         await LoginPage.login(constants.LOGIN_CREDENTIALS.INVALID_USERNAME, constants.LOGIN_CREDENTIALS.VALID_PASSWORD)
         await expect(LoginPage.error).toHaveText(constants.ERROR_MESSAGES.INVALID_CREDENTIALS)
     })
